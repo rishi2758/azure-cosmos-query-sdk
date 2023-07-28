@@ -1,4 +1,4 @@
-package com.azure.cosmos.query;
+package com.azure.cosmos;
 
 public interface BaseFilter {
 	String getUiKey();

@@ -1,4 +1,4 @@
-//package com.azure.cosmos.query;
+package com.azure.cosmos;//package com.azure.cosmos.query;
 //
 //import java.util.List;
 //import java.util.stream.Collectors;
