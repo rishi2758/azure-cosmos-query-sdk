@@ -1,4 +1,4 @@
-//package com.azure.cosmos.query;
+package com.azure.cosmos;//package com.azure.cosmos.query;
 //
 //import lombok.extern.slf4j.Slf4j;
 //

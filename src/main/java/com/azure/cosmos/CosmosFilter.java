@@ -1,6 +1,4 @@
-package com.azure.cosmos.query;
-
-import com.azure.cosmos.query.Predicate.Operator;
+package com.azure.cosmos;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,7 +10,7 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 public class CosmosFilter<T> {
-    private T filter;
-    private Operator operator;
-    private String[] values;
+	private T filter;
+	private Predicate.Operator operator;
+	private String[] values;
 }
