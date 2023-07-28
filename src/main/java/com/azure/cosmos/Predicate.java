@@ -32,7 +32,7 @@ public final class Predicate {
 		predicate.appendToPredicate(orJoiner.toString());
 		return predicate;
 	}
-	private void appendToPredicate(CosmosFilter<BaseFilter> cosmosFilter) {
+	private void appendToPredicate(CosmosFilter<? extends BaseFilter> cosmosFilter) {
 		String key = getEntityField(cosmosFilter.getFilter().getFilterKey());
 		String value = getValue(cosmosFilter.getValues());
 		Operator operator = cosmosFilter.getOperator();
@@ -81,7 +81,7 @@ public final class Predicate {
 		private PredicateBuilder() {
 			this.predicate = new Predicate();
 		}
-		public PredicateBuilder withCosmosFilter(CosmosFilter<BaseFilter> cosmosFilter) {
+		public PredicateBuilder withCosmosFilter(CosmosFilter<? extends BaseFilter> cosmosFilter) {
 			this.predicate.appendToPredicate(cosmosFilter);
 			return this;
 		}
